@@ -1,6 +1,18 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: var(--font-primary);
+    font-size: var(--base_font_size);
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--primary-theme);
+  }
+  
+  ::selection {
+    color: white;
+    background: var(--primary-theme);
   }
    
   :root{
@@ -24,11 +36,6 @@
   }
    
   /*--------------------- GENERAL ---------------------*/
-
-  html {
-    font-family: var(--font-primary);
-    font-size: var(--base_font_size);
-  }
 
   .h1, .h2 {
     margin-bottom: var(--base_spacing-size);
@@ -210,8 +217,8 @@
     margin-top: calc(var(--base_spacing-size) * 0.5);
   }
   
-  input[type=checkbox]:checked,
-  input[type='radio']:checked {
+  .checkbox-list input[type=checkbox]:checked,
+  .form-radio input[type='radio']:checked {
     filter:hue-rotate(220deg);
     -webkit-filter: hue-rotate(220deg);
   }
@@ -220,18 +227,18 @@
    
   /*--------------------- TABLE -------------------*/
 
-  table {
+  .table {
     border-collapse: collapse;
     width: 100%;
   }
 
-  table, th, td{
+  .table table, th, td{
     border-spacing: 0;
     border: 1px solid black;
     padding: 1rem;
   }
 
-  th {
+  .table th {
     background-color: var(--primary-theme);
   }
 
